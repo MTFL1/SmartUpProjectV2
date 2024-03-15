@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		921C4A2C2B99B047002AA62D /* SmartUpProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C4A2B2B99B047002AA62D /* SmartUpProjectApp.swift */; };
+		921C4A2E2B99B047002AA62D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C4A2D2B99B047002AA62D /* ContentView.swift */; };
+		921C4A302B99B049002AA62D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921C4A2F2B99B049002AA62D /* Assets.xcassets */; };
+		921C4A332B99B049002AA62D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921C4A322B99B049002AA62D /* Preview Assets.xcassets */; };
+		9234E8DC2BA1A5A900224F09 /* IA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234E8DB2BA1A5A900224F09 /* IA.swift */; };
+		9234E8E12BA1A8BB00224F09 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 9234E8E02BA1A8BB00224F09 /* OpenAI */; };
+		9234E9102BA1D17900224F09 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 9234E90F2BA1D17900224F09 /* OpenAI */; };
+		929853262B9B136F00611777 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853252B9B136F00611777 /* TabBar.swift */; };
+		929853282B9B139000611777 /* Bouton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853272B9B139000611777 /* Bouton.swift */; };
+		9298532A2B9B13A300611777 /* ChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853292B9B13A300611777 /* ChatBot.swift */; };
+		9298532C2B9B13BD00611777 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298532B2B9B13BD00611777 /* NavigationBar.swift */; };
+		929853302B9B140500611777 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298532F2B9B140500611777 /* SegmentedControl.swift */; };
+		929853322B9B1DD400611777 /* Projet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853312B9B1DD400611777 /* Projet.swift */; };
+		929853482B9B1E9B00611777 /* ChoixIdee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853472B9B1E9B00611777 /* ChoixIdee.swift */; };
+		9298534A2B9B1EB500611777 /* Edition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853492B9B1EB500611777 /* Edition.swift */; };
+		9298534C2B9B1EC200611777 /* CompteRendu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298534B2B9B1EC200611777 /* CompteRendu.swift */; };
+		9298534E2B9B1EE800611777 /* HistoriqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298534D2B9B1EE800611777 /* HistoriqueView.swift */; };
+		929853512B9B1F2100611777 /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853502B9B1F2100611777 /* Landing.swift */; };
+		929853532B9B1F8F00611777 /* Demarrage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853522B9B1F8F00611777 /* Demarrage.swift */; };
+		929853552B9B1F9B00611777 /* Dialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853542B9B1F9B00611777 /* Dialogue.swift */; };
+		929853572B9B1FBE00611777 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853562B9B1FBE00611777 /* Note.swift */; };
+		929853592B9B206B00611777 /* MapList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929853582B9B206B00611777 /* MapList.swift */; };
+		9298535D2B9B209700611777 /* ModalMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298535C2B9B209700611777 /* ModalMap.swift */; };
+		92991D2B2BA0ADA5000F9FB5 /* HistoriqueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92991D2A2BA0ADA5000F9FB5 /* HistoriqueModel.swift */; };
+		92991D2D2BA0ADC3000F9FB5 /* HistoriqueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92991D2C2BA0ADC3000F9FB5 /* HistoriqueData.swift */; };
+		92991D2F2BA0ADF7000F9FB5 /* CompteRenduPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92991D2E2BA0ADF7000F9FB5 /* CompteRenduPDF.swift */; };
+		C3A8D9962BA04EEF00731287 /* ModalChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8D9952BA04EEF00731287 /* ModalChatBot.swift */; };
+		CE4B88102B9F483D00C8B296 /* LesIncubateurs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B880F2B9F483D00C8B296 /* LesIncubateurs.swift */; };
+		CE4B88122B9F4A8100C8B296 /* TableauIncubateurs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B88112B9F4A8100C8B296 /* TableauIncubateurs.swift */; };
+		CE4B88142B9F4AE100C8B296 /* IncubateurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B88132B9F4AE100C8B296 /* IncubateurView.swift */; };
+		CE4B88162B9F4B4900C8B296 /* ModalMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B88152B9F4B4900C8B296 /* ModalMapView.swift */; };
+		CE4B88182B9F4BB600C8B296 /* ListIncubateurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B88172B9F4BB600C8B296 /* ListIncubateurView.swift */; };
+		CEA6D3D82BA03948001776BB /* CarteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6D3D72BA03948001776BB /* CarteView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		921C4A282B99B047002AA62D /* SmartUpProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartUpProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		921C4A2B2B99B047002AA62D /* SmartUpProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartUpProjectApp.swift; sourceTree = "<group>"; };
+		921C4A2D2B99B047002AA62D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		921C4A2F2B99B049002AA62D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		921C4A322B99B049002AA62D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9234E8DB2BA1A5A900224F09 /* IA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IA.swift; sourceTree = "<group>"; };
+		9234E8DD2BA1A61600224F09 /* OpenAI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OpenAI; path = "../../../../Library/Developer/Xcode/DerivedData/ChatBotMain-ducispqmuwfbpkderooyketckcge/SourcePackages/checkouts/OpenAI"; sourceTree = "<group>"; };
+		929853252B9B136F00611777 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		929853272B9B139000611777 /* Bouton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouton.swift; sourceTree = "<group>"; };
+		929853292B9B13A300611777 /* ChatBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBot.swift; sourceTree = "<group>"; };
+		9298532B2B9B13BD00611777 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		9298532F2B9B140500611777 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		929853312B9B1DD400611777 /* Projet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projet.swift; sourceTree = "<group>"; };
+		929853472B9B1E9B00611777 /* ChoixIdee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoixIdee.swift; sourceTree = "<group>"; };
+		929853492B9B1EB500611777 /* Edition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edition.swift; sourceTree = "<group>"; };
+		9298534B2B9B1EC200611777 /* CompteRendu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompteRendu.swift; sourceTree = "<group>"; };
+		9298534D2B9B1EE800611777 /* HistoriqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriqueView.swift; sourceTree = "<group>"; };
+		929853502B9B1F2100611777 /* Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landing.swift; sourceTree = "<group>"; };
+		929853522B9B1F8F00611777 /* Demarrage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demarrage.swift; sourceTree = "<group>"; };
+		929853542B9B1F9B00611777 /* Dialogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialogue.swift; sourceTree = "<group>"; };
+		929853562B9B1FBE00611777 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		929853582B9B206B00611777 /* MapList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapList.swift; sourceTree = "<group>"; };
+		9298535C2B9B209700611777 /* ModalMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMap.swift; sourceTree = "<group>"; };
+		92991D2A2BA0ADA5000F9FB5 /* HistoriqueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriqueModel.swift; sourceTree = "<group>"; };
+		92991D2C2BA0ADC3000F9FB5 /* HistoriqueData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriqueData.swift; sourceTree = "<group>"; };
+		92991D2E2BA0ADF7000F9FB5 /* CompteRenduPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompteRenduPDF.swift; sourceTree = "<group>"; };
+		C3A8D9952BA04EEF00731287 /* ModalChatBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalChatBot.swift; sourceTree = "<group>"; };
+		CE4B880F2B9F483D00C8B296 /* LesIncubateurs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LesIncubateurs.swift; sourceTree = "<group>"; };
+		CE4B88112B9F4A8100C8B296 /* TableauIncubateurs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableauIncubateurs.swift; sourceTree = "<group>"; };
+		CE4B88132B9F4AE100C8B296 /* IncubateurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncubateurView.swift; sourceTree = "<group>"; };
+		CE4B88152B9F4B4900C8B296 /* ModalMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMapView.swift; sourceTree = "<group>"; };
+		CE4B88172B9F4BB600C8B296 /* ListIncubateurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIncubateurView.swift; sourceTree = "<group>"; };
+		CEA6D3D72BA03948001776BB /* CarteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		921C4A252B99B047002AA62D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9234E9102BA1D17900224F09 /* OpenAI in Frameworks */,
+				9234E8E12BA1A8BB00224F09 /* OpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		921C4A1F2B99B047002AA62D = {
+			isa = PBXGroup;
+			children = (
+				921C4A2A2B99B047002AA62D /* SmartUpProject */,
+				921C4A292B99B047002AA62D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		921C4A292B99B047002AA62D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				921C4A282B99B047002AA62D /* SmartUpProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		921C4A2A2B99B047002AA62D /* SmartUpProject */ = {
+			isa = PBXGroup;
+			children = (
+				9298531E2B9B127B00611777 /* View */,
+				921C4A2B2B99B047002AA62D /* SmartUpProjectApp.swift */,
+				921C4A2D2B99B047002AA62D /* ContentView.swift */,
+				921C4A2F2B99B049002AA62D /* Assets.xcassets */,
+				921C4A312B99B049002AA62D /* Preview Content */,
+			);
+			path = SmartUpProject;
+			sourceTree = "<group>";
+		};
+		921C4A312B99B049002AA62D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				921C4A322B99B049002AA62D /* Preview Assets.xcassets */,
+				9234E8DD2BA1A61600224F09 /* OpenAI */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9298531E2B9B127B00611777 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B880E2B9F481000C8B296 /* Data */,
+				9298534F2B9B1F0A00611777 /* LandingView */,
+				929853242B9B131B00611777 /* NoteView */,
+				929853232B9B12F000611777 /* HistoriqueView */,
+				929853222B9B12D400611777 /* ProjectView */,
+				929853212B9B12CA00611777 /* MapView */,
+				929853202B9B12A600611777 /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		929853202B9B12A600611777 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				929853252B9B136F00611777 /* TabBar.swift */,
+				929853272B9B139000611777 /* Bouton.swift */,
+				929853292B9B13A300611777 /* ChatBot.swift */,
+				C3A8D9952BA04EEF00731287 /* ModalChatBot.swift */,
+				9298532B2B9B13BD00611777 /* NavigationBar.swift */,
+				9298532F2B9B140500611777 /* SegmentedControl.swift */,
+				929853522B9B1F8F00611777 /* Demarrage.swift */,
+				929853542B9B1F9B00611777 /* Dialogue.swift */,
+				9298535C2B9B209700611777 /* ModalMap.swift */,
+				9234E8DB2BA1A5A900224F09 /* IA.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		929853212B9B12CA00611777 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				929853582B9B206B00611777 /* MapList.swift */,
+				CE4B88132B9F4AE100C8B296 /* IncubateurView.swift */,
+				CEA6D3D72BA03948001776BB /* CarteView.swift */,
+				CE4B88152B9F4B4900C8B296 /* ModalMapView.swift */,
+				CE4B88172B9F4BB600C8B296 /* ListIncubateurView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		929853222B9B12D400611777 /* ProjectView */ = {
+			isa = PBXGroup;
+			children = (
+				929853312B9B1DD400611777 /* Projet.swift */,
+				929853472B9B1E9B00611777 /* ChoixIdee.swift */,
+				929853492B9B1EB500611777 /* Edition.swift */,
+				9298534B2B9B1EC200611777 /* CompteRendu.swift */,
+			);
+			path = ProjectView;
+			sourceTree = "<group>";
+		};
+		929853232B9B12F000611777 /* HistoriqueView */ = {
+			isa = PBXGroup;
+			children = (
+				92991D2E2BA0ADF7000F9FB5 /* CompteRenduPDF.swift */,
+				9298534D2B9B1EE800611777 /* HistoriqueView.swift */,
+			);
+			path = HistoriqueView;
+			sourceTree = "<group>";
+		};
+		929853242B9B131B00611777 /* NoteView */ = {
+			isa = PBXGroup;
+			children = (
+				929853562B9B1FBE00611777 /* Note.swift */,
+			);
+			path = NoteView;
+			sourceTree = "<group>";
+		};
+		9298534F2B9B1F0A00611777 /* LandingView */ = {
+			isa = PBXGroup;
+			children = (
+				929853502B9B1F2100611777 /* Landing.swift */,
+			);
+			path = LandingView;
+			sourceTree = "<group>";
+		};
+		CE4B880E2B9F481000C8B296 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B880F2B9F483D00C8B296 /* LesIncubateurs.swift */,
+				92991D2C2BA0ADC3000F9FB5 /* HistoriqueData.swift */,
+				92991D2A2BA0ADA5000F9FB5 /* HistoriqueModel.swift */,
+				CE4B88112B9F4A8100C8B296 /* TableauIncubateurs.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		921C4A272B99B047002AA62D /* SmartUpProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921C4A362B99B049002AA62D /* Build configuration list for PBXNativeTarget "SmartUpProject" */;
+			buildPhases = (
+				921C4A242B99B047002AA62D /* Sources */,
+				921C4A252B99B047002AA62D /* Frameworks */,
+				921C4A262B99B047002AA62D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartUpProject;
+			packageProductDependencies = (
+				9234E8E02BA1A8BB00224F09 /* OpenAI */,
+				9234E90F2BA1D17900224F09 /* OpenAI */,
+			);
+			productName = SmartUpProject;
+			productReference = 921C4A282B99B047002AA62D /* SmartUpProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		921C4A202B99B047002AA62D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					921C4A272B99B047002AA62D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 921C4A232B99B047002AA62D /* Build configuration list for PBXProject "SmartUpProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 921C4A1F2B99B047002AA62D;
+			packageReferences = (
+				9234E90E2BA1D17900224F09 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = 921C4A292B99B047002AA62D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				921C4A272B99B047002AA62D /* SmartUpProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		921C4A262B99B047002AA62D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921C4A332B99B049002AA62D /* Preview Assets.xcassets in Resources */,
+				921C4A302B99B049002AA62D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		921C4A242B99B047002AA62D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9298535D2B9B209700611777 /* ModalMap.swift in Sources */,
+				929853482B9B1E9B00611777 /* ChoixIdee.swift in Sources */,
+				921C4A2E2B99B047002AA62D /* ContentView.swift in Sources */,
+				CE4B88102B9F483D00C8B296 /* LesIncubateurs.swift in Sources */,
+				CE4B88182B9F4BB600C8B296 /* ListIncubateurView.swift in Sources */,
+				929853302B9B140500611777 /* SegmentedControl.swift in Sources */,
+				929853322B9B1DD400611777 /* Projet.swift in Sources */,
+				921C4A2C2B99B047002AA62D /* SmartUpProjectApp.swift in Sources */,
+				929853282B9B139000611777 /* Bouton.swift in Sources */,
+				9298534E2B9B1EE800611777 /* HistoriqueView.swift in Sources */,
+				929853532B9B1F8F00611777 /* Demarrage.swift in Sources */,
+				9298534C2B9B1EC200611777 /* CompteRendu.swift in Sources */,
+				CE4B88162B9F4B4900C8B296 /* ModalMapView.swift in Sources */,
+				9298532C2B9B13BD00611777 /* NavigationBar.swift in Sources */,
+				92991D2B2BA0ADA5000F9FB5 /* HistoriqueModel.swift in Sources */,
+				CE4B88142B9F4AE100C8B296 /* IncubateurView.swift in Sources */,
+				929853262B9B136F00611777 /* TabBar.swift in Sources */,
+				9298532A2B9B13A300611777 /* ChatBot.swift in Sources */,
+				92991D2D2BA0ADC3000F9FB5 /* HistoriqueData.swift in Sources */,
+				929853512B9B1F2100611777 /* Landing.swift in Sources */,
+				929853592B9B206B00611777 /* MapList.swift in Sources */,
+				9298534A2B9B1EB500611777 /* Edition.swift in Sources */,
+				CE4B88122B9F4A8100C8B296 /* TableauIncubateurs.swift in Sources */,
+				9234E8DC2BA1A5A900224F09 /* IA.swift in Sources */,
+				C3A8D9962BA04EEF00731287 /* ModalChatBot.swift in Sources */,
+				929853552B9B1F9B00611777 /* Dialogue.swift in Sources */,
+				929853572B9B1FBE00611777 /* Note.swift in Sources */,
+				92991D2F2BA0ADF7000F9FB5 /* CompteRenduPDF.swift in Sources */,
+				CEA6D3D82BA03948001776BB /* CarteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		921C4A342B99B049002AA62D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		921C4A352B99B049002AA62D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		921C4A372B99B049002AA62D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartUpProject/Preview Content\"";
+				DEVELOPMENT_TEAM = YUGWP4TMG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SmartUpProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		921C4A382B99B049002AA62D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartUpProject/Preview Content\"";
+				DEVELOPMENT_TEAM = YUGWP4TMG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SmartUpProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		921C4A232B99B047002AA62D /* Build configuration list for PBXProject "SmartUpProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921C4A342B99B049002AA62D /* Debug */,
+				921C4A352B99B049002AA62D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		921C4A362B99B049002AA62D /* Build configuration list for PBXNativeTarget "SmartUpProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921C4A372B99B049002AA62D /* Debug */,
+				921C4A382B99B049002AA62D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9234E90E2BA1D17900224F09 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9234E8E02BA1A8BB00224F09 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenAI;
+		};
+		9234E90F2BA1D17900224F09 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9234E90E2BA1D17900224F09 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 921C4A202B99B047002AA62D /* Project object */;
+}
