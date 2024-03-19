@@ -25,8 +25,8 @@ struct SegmentedControl: View {
                     }
                     .pickerStyle(.segmented)
                     //.padding(.horizontal)
-                    .background(.gray.opacity(0.2))
-                    .offset(y:7 )
+                    .background(.white.opacity(0.2))
+                    .colorMultiply(Color("C2A3ED"))
                     //.colorMultiply(.purple)
                     
             if Map == 0 {

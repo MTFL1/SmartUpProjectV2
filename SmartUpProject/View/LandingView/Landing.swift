@@ -24,7 +24,7 @@ struct Landing1: View {
                     .padding()
                 Text("Nous vous aidons à valider vos idées")
                 
-         //       NavigationLink(destination: //AJouter la destination()) {
+               NavigationLink(destination: QuestionnaireView()) {
                             Text("Commencer")
                                 .foregroundColor(.white)
                                 .frame(width: 100)
@@ -34,7 +34,7 @@ struct Landing1: View {
                                 .padding()
                         }
                         .buttonStyle(PlainButtonStyle())
-   //         }
+            }
         }
 
     }

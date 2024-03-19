@@ -21,9 +21,11 @@ struct CarteView: View {
                     {
                             Image(systemName: "mappin")
                                 .foregroundStyle(.red)
+  // .onTapGesture transforme "mappin" en boutton
                                 .onTapGesture {
                                     selectedPlace = pointGps
                                 }
+  // .sheet correspond à la modale qui apparait lors qu'on clique sur une épingle sur la map
                                 .sheet(item: $selectedPlace) { pointGps in
                                     IncubateurView(incubateur: pointGps)
                                         .presentationDetents([.medium, .large])
@@ -34,7 +36,7 @@ struct CarteView: View {
                     
                 }
             }
-         
+  // Permet à l'utilisateur de faire changer l'orientation de le vue de la map manuellement
         .mapStyle(.standard(elevation: .realistic))    }
 }
 

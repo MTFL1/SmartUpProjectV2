@@ -9,8 +9,8 @@ import SwiftUI
 
 struct IncubateurView: View {
     @ObservedObject var incubateur : LesIncubateurs
-    
-    
+ //Permet d'appeler une app native telque safari
+    @Environment(\.openURL) var openURL
     
     var body: some View {
         
@@ -18,9 +18,9 @@ struct IncubateurView: View {
         VStack(alignment: .leading, spacing: 20) {
             Text(incubateur.nom)
                 .font(.title3)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .fontWeight(.bold)
                 .foregroundStyle(.black)
-                .padding()
+                
             VStack(alignment: .leading, spacing: 5){
                 Text(incubateur.adresse1)
                     .foregroundStyle(.black)
@@ -40,36 +40,41 @@ struct IncubateurView: View {
                 Image(systemName: "phone.circle")
                     .font(.system(size: 25))
                     .accessibilityLabel(Text("Logo téléphone"))
-                // Text("Téléphone")
                     .font(.headline)
-                    .foregroundStyle(.purple)
-                Text(incubateur.telephone)
+                    .foregroundStyle(.black)
+ // Boutton qui permet de faire un appel téléphonique en cliquant sur le N° de téléphone
+                Button(incubateur.telephone){
+                    openURL(URL(string:"tel:"+incubateur.telephone)!)
+                }
                     
             }
             HStack{
                 Image(systemName: "at")
                     .font(.system(size: 20))
                     .accessibilityLabel(Text("Logo adresse mail"))
-                // Text("Mail")
                     .font(.headline)
-                    .foregroundStyle(.purple)
-                Text(incubateur.mail)
+                    .foregroundStyle(.black)
+    // Boutton qui appelle l'app native de mail
+                Button(incubateur.mail){
+                    openURL(URL(string:"mailto:"+incubateur.mail)!)
+                }
                    
             }
             HStack{
                 Text("Site")
                     .font(.headline)
-                    .foregroundStyle(.purple)
-                Text(incubateur.siteWeb)
-                  
-            }
-            HStack{
-                Text("Spécialisation")
-                    .font(.headline)
-                    .foregroundStyle(.purple)
-                Text(incubateur.spécialité)
                     .foregroundStyle(.black)
-                
+    // Boutton qui appelle l'app native safari
+                Button(incubateur.siteWeb){
+                    openURL(URL(string: incubateur.siteWeb)!)
+                }
+            }
+                HStack{
+                    Text("Spécialisation")
+                        .font(.headline)
+                        .foregroundStyle(.black)
+                    Text(incubateur.spécialité)
+                        .foregroundStyle(.black)
             }
         }
     }
@@ -78,4 +83,3 @@ struct IncubateurView: View {
 #Preview {
     IncubateurView(incubateur: incubateurPreview)
 }
-

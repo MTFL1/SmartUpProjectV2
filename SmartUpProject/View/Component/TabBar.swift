@@ -17,7 +17,7 @@ struct TabBar: View {
                 Label("Projet", systemImage: "folder.badge.plus")
             }
         
-        Note()
+        NoteView()
             .tabItem {
                 Label("Note", systemImage: "list.bullet.clipboard")
             }
