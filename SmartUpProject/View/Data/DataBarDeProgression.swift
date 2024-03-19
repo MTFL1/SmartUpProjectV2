@@ -5,7 +5,7 @@
 //  Created by apprenant37 on 13/03/2024.
 //
 
-import Foundation
+/*import Foundation
 
 var progressionBars : [ProgressionBar] = [
     ProgressionBar(phrase: "Prêt pour le début de l'aventure?", valeur: "10%", page: "1/11 ", total: 10),
@@ -22,5 +22,5 @@ var progressionBars : [ProgressionBar] = [
    
     
 ]
-
+*/
 

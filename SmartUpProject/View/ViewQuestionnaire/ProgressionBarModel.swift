@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ProgressionBarModel: View {
-    @ObservedObject var progressionBar : ProgressionBar
+    @StateObject var progressionBar = Question(intitule: "question une avec reponse possible ", reponse: ["A","B","C","D"], choix: ["A","B","C","D"], phrase: "Prêt pour le début de l'aventure?", valeur: "10%", page: "1/11 ", total: 10)
     
    // @State private var progress = 1.0
     
     var body: some View {
-        VStack(spacing: 6) {
+        VStack {
             
             Text(progressionBar.phrase)
             
@@ -21,19 +21,19 @@ struct ProgressionBarModel: View {
             ProgressView(value:progressionBar.total, total :100)
             //Text(progressionBar.phrase); //Text(progressionBar.valeur)
                 .accentColor(.purple)
-            
-                Image("SmartUp")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-//                Text(progressionBar.phrase)
-//                Spacer()
-//                // Text(progressionBar.valeur)
-            }
-            .accentColor(.purple)
-           // currentValueLabel: do {
                 Text(progressionBar.page)
                    // .frame(maxWidth: .infinity, alignment: . trailing)
                     .foregroundStyle(.purple)
+      //          Image("SmartUp")
+       //             .resizable()
+       //             .frame(width: 40, height: 40)
+//                Text(progressionBar.phrase)
+//                Spacer()
+//               Text(progressionBar.valeur)
+            }
+            .accentColor(.purple)
+           // currentValueLabel: do {
+              
             }
         .padding()
             }
@@ -49,5 +49,5 @@ struct ProgressionBarModel: View {
 
 
 #Preview {
-    ProgressionBarModel(progressionBar:ProgressionBar(phrase: "", valeur: "", page: "", total: Double()))
+    ProgressionBarModel()
 }

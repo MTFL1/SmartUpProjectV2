@@ -7,18 +7,14 @@
 import SwiftUI
 
 struct Dialogue: View {
-    @State private var isActive = false
-    
+   
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 25.0)
                     .fill(Color("C2A3ED"))
                     .shadow(radius: 15)
-                    .opacity(isActive ? 0 : 1)
-                if isActive {
-                    Demarrage()
-                }
+                    
                 VStack {
                     HStack {
                         Text("SmartUp")
@@ -54,20 +50,10 @@ struct Dialogue: View {
                     .multilineTextAlignment(.center)
                     .padding(2)
                     
-                }.opacity(isActive ? 0 : 1)
+                }
             }
             .frame(width: 350, height: 540)
           
-        }
-        .onAppear {
-            loadingDispatch()
-        }
-    }
-   
-    func loadingDispatch() {
-        isActive = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            isActive = false
         }
     }
 }

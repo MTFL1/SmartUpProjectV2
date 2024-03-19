@@ -5,7 +5,7 @@
 //  Created by apprenant37 on 13/03/2024.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 struct ProgressionBarView: View {
    var body: some View {
@@ -18,4 +18,4 @@ struct ProgressionBarView: View {
 
 #Preview {
     ProgressionBarView()
-}
+}*/

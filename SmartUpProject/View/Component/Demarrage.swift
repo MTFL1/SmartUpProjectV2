@@ -34,27 +34,13 @@ struct Demarrage: View {
                 self.size = 0.7
                 self.opacity = 1
             }
+            
         }
+     
     }
+  
 }
    
-/*A ajouter dans la struct
- @State private var isActive = false
- 
- 
- //à ajouter dans une Zstack
- if isActive {
-     Demarrage()
- }
-func loadingDispatch() {
-    isActive = true
-    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-        isActive = false
-    }
-}
-*/
-
-
 
 #Preview {
     Demarrage()

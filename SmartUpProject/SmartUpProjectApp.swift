@@ -11,7 +11,7 @@ import SwiftUI
 struct SmartUpProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Landing1()
         }
     }
 }

@@ -5,7 +5,7 @@
 //  Created by apprenant37 on 13/03/2024.
 //
 
-import Foundation
+/*import Foundation
 class ProgressionBar : Identifiable, ObservableObject{
     var id = UUID()
     var phrase : String
@@ -20,4 +20,4 @@ class ProgressionBar : Identifiable, ObservableObject{
         self.total = total
     }
     
-}
+}*/

@@ -12,7 +12,7 @@ struct TabBar: View {
         
         TabView {
 
-        Projet()
+        QuestionnaireView()
             .tabItem {
                 Label("Projet", systemImage: "folder.badge.plus")
             }
@@ -22,7 +22,7 @@ struct TabBar: View {
                 Label("Note", systemImage: "list.bullet.clipboard")
             }
         
-        CarteView()
+        SegmentedControl()
             .tabItem {
                 Label("Map", systemImage: "map")
             }

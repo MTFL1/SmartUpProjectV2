@@ -148,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				92A325BB2BA485EB009F90CA /* ViewQuestionnaire */,
-				92A325BA2BA485AF009F90CA /* New Group */,
 				92A325AF2BA484A9009F90CA /* Data2 */,
 				9298534F2B9B1F0A00611777 /* LandingView */,
 				929853242B9B131B00611777 /* NoteView */,
@@ -240,13 +239,6 @@
 				922274872BA8764C00C1A2D4 /* DataQuestion.swift */,
 			);
 			path = Data2;
-			sourceTree = "<group>";
-		};
-		92A325BA2BA485AF009F90CA /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		92A325BB2BA485EB009F90CA /* ViewQuestionnaire */ = {
