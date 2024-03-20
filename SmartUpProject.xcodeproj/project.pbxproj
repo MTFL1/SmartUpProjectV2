@@ -51,7 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		921C4A282B99B047002AA62D /* SmartUpProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartUpProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		921C4A282B99B047002AA62D /* SmartUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921C4A2B2B99B047002AA62D /* SmartUpProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartUpProjectApp.swift; sourceTree = "<group>"; };
 		921C4A2D2B99B047002AA62D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		921C4A2F2B99B049002AA62D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		921C4A292B99B047002AA62D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				921C4A282B99B047002AA62D /* SmartUpProject.app */,
+				921C4A282B99B047002AA62D /* SmartUp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,9 +254,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		921C4A272B99B047002AA62D /* SmartUpProject */ = {
+		921C4A272B99B047002AA62D /* SmartUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 921C4A362B99B049002AA62D /* Build configuration list for PBXNativeTarget "SmartUpProject" */;
+			buildConfigurationList = 921C4A362B99B049002AA62D /* Build configuration list for PBXNativeTarget "SmartUp" */;
 			buildPhases = (
 				921C4A242B99B047002AA62D /* Sources */,
 				921C4A252B99B047002AA62D /* Frameworks */,
@@ -266,13 +266,13 @@
 			);
 			dependencies = (
 			);
-			name = SmartUpProject;
+			name = SmartUp;
 			packageProductDependencies = (
 				9234E8E02BA1A8BB00224F09 /* OpenAI */,
 				9234E90F2BA1D17900224F09 /* OpenAI */,
 			);
 			productName = SmartUpProject;
-			productReference = 921C4A282B99B047002AA62D /* SmartUpProject.app */;
+			productReference = 921C4A282B99B047002AA62D /* SmartUp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -306,7 +306,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				921C4A272B99B047002AA62D /* SmartUpProject */,
+				921C4A272B99B047002AA62D /* SmartUp */,
 			);
 		};
 /* End PBXProject section */
@@ -511,7 +511,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SmartUpProject;
+				PRODUCT_BUNDLE_IDENTIFIER = SmartUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -540,7 +540,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SmartUpProject;
+				PRODUCT_BUNDLE_IDENTIFIER = SmartUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		921C4A362B99B049002AA62D /* Build configuration list for PBXNativeTarget "SmartUpProject" */ = {
+		921C4A362B99B049002AA62D /* Build configuration list for PBXNativeTarget "SmartUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				921C4A372B99B049002AA62D /* Debug */,
