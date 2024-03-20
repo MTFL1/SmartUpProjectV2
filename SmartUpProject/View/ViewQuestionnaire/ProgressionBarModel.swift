@@ -5,7 +5,7 @@
 //  Created by apprenant37 on 13/03/2024.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 struct ProgressionBarModel: View {
     @StateObject var progressionBar = Question(intitule: "question une avec reponse possible ", reponse: ["A","B","C","D"], choix: ["A","B","C","D"], phrase: "Prêt pour le début de l'aventure?", valeur: "10%", page: "1/11 ", total: 10)
@@ -51,3 +51,4 @@ struct ProgressionBarModel: View {
 #Preview {
     ProgressionBarModel()
 }
+*/

@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct SmartUpProjectApp: App {
+
     var body: some Scene {
         WindowGroup {
-            Landing1()
+            ContentView()
         }
     }
 }

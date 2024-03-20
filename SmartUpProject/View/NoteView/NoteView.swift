@@ -19,7 +19,7 @@ struct NoteView: View {
     @State private var newNoteContent = ""
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 HStack {
                     TextField("Ajouter une nouvelle note", text: $newNoteContent)
@@ -69,13 +69,8 @@ func truncateTitle(_ title: String) -> String {
     }
 }
 
-struct NoteView_Previews: PreviewProvider {
-    static var previews: some View {
-    ContentView()
-   }
-}
 
-  //  #Preview {
- //    NoteView()
+   #Preview {
+  ContentView()
     
-//}
+}

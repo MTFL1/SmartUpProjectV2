@@ -20,6 +20,7 @@ struct Demarrage: View {
                 Image("SmartUp")
                     .padding(10)
             }
+            .shadow(radius: 10)
             Text("SmartUp")
                 .font(.largeTitle)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)

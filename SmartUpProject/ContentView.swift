@@ -2,9 +2,15 @@ import SwiftUI
 
 struct ContentView: View {
  
-    
+    @State private var showSecondView = false
     var body: some View {
-        TabBar()
+        VStack {
+                    if showSecondView == true {
+                        TabBar()
+                    } else {
+                        Landing1(showSecondView: $showSecondView)
+                    }
+                }
     }
     
 }

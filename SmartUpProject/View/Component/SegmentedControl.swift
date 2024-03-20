@@ -24,8 +24,8 @@ struct SegmentedControl: View {
                       
                     }
                     .pickerStyle(.segmented)
-                    //.padding(.horizontal)
-                    .background(.white.opacity(0.2))
+                    .padding(.horizontal)
+                  //  .background(.white.opacity(0.2))
                     .colorMultiply(Color("C2A3ED"))
                     //.colorMultiply(.purple)
                     
@@ -46,6 +46,7 @@ struct SegmentedControl: View {
     }
 
 
-            #Preview {SegmentedControl()
-            }
+#Preview {
+ SegmentedControl()
+}
     

@@ -21,11 +21,16 @@ struct HistoriqueView: View {
                     }label: {
                         Image(systemName: historique.icon)
                             .padding()
-                            .font(.system(size: 28))
-                        VStack{
-                            Text(historique.name)
-                                .font(.title)
-                            Text(historique.date)
+                            .font(.system(size: 25))
+                 .foregroundStyle(Color("C2A3ED"))
+
+                VStack{
+            Text(historique.name)
+             .font(.title)
+                     .foregroundStyle(Color("C2A3ED"))
+
+            Text(historique.date)
+                .foregroundStyle(.gray)
 
                             }
                         }

@@ -18,11 +18,12 @@ struct IdeeProjetFinale: View {
 
             
         NavigationStack {
-            Spacer()
+            
             VStack(alignment: .center, spacing: 5) {
-               
+                Spacer()
                         
-                        Text("C'est fait, bien joué !")
+                Text("C'est fait, bien joué !")
+                    .font(.footnote)
                         
                         HStack{
                             ProgressView(value: 100, total :100)
@@ -30,11 +31,13 @@ struct IdeeProjetFinale: View {
                             
                             Text("12/12")
                                 .foregroundStyle(.purple)
+                                .font(.footnote)
            
                         }
                         .padding(.horizontal,40)
                         .accentColor(.purple)
                 Spacer()
+                    .frame(height : 20)
                 
                     Text("Grâce à vos recherches, déterminez votre concept de start-up.")
                         .fontWeight(.semibold)
@@ -69,7 +72,7 @@ struct IdeeProjetFinale: View {
                     Text("À ce stade, quelle est votre préférence ?")
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
-                        .padding(.top, 40)
+                        .padding(.top, 30)
                     
                     HStack(spacing: 40) {
                         
@@ -93,7 +96,7 @@ struct IdeeProjetFinale: View {
                         
                         
                         }
-                        .padding(.top, 40)
+                        .padding(.top, 20)
                     
                     NavigationLink(destination: CompteRendu()) {
                                  Text("Commencer")
@@ -107,16 +110,11 @@ struct IdeeProjetFinale: View {
                              .buttonStyle(PlainButtonStyle())
                              
             }
+            Spacer()
+                .frame(height:60)
         }
       
-            
-            
-            
-                
-        Spacer()
-            .frame(height: 75)
-            
-        
+
         
     }
 }

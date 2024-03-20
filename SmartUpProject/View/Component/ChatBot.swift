@@ -28,7 +28,7 @@ struct ChatBot: View {
                         })
                 }
             }
-        }
+        }.shadow(radius: 20)
     }
 }
 #Preview {
